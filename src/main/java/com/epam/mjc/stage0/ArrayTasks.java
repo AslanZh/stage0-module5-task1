@@ -1,8 +1,5 @@
 package com.epam.mjc.stage0;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 /**
  * Here are the tasks for working with the arrays.
  * <p>
@@ -129,10 +126,10 @@ public class ArrayTasks {
      * arr = [[5, 4], [7]]       -> [[7], [4, 5]]
      */
     public int[][] sortRaggedArray(int[][] arr) {
-        for (int[] array : arr) {
-            Arrays.sort(array);
-        }
-        Arrays.sort(arr, Comparator.comparing(subArr -> subArr.length));
+//        for (int[] array : arr) {
+//            Arrays.sort(array);
+//        }
+//        Arrays.sort(arr, Comparator.comparing(subArr -> subArr.length));
         return arr;
     }
 }
