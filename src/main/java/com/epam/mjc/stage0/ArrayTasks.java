@@ -130,6 +130,27 @@ public class ArrayTasks {
 //            Arrays.sort(array);
 //        }
 //        Arrays.sort(arr, Comparator.comparing(subArr -> subArr.length));
+
+        for (int[] array : arr) {
+            for (int i = 0; i <array.length; i++) {
+                for (int j = i+1; j <array.length; j++) {
+                    if(array[i] >array[j]) {
+                        int tmp = array[i];
+                        array[i] = array[j];
+                        array[j] = tmp;
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j].length < arr[i].length) {
+                    int[] temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
         return arr;
     }
 }
